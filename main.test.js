@@ -2,10 +2,78 @@
  * YOUR CODE HERE *
  ******************/
 
+const addAll = function (nums) {
+  let num = 0;
+  for (const items of nums) {
+    num = num + items;
+  }
+  return num;
+}
 
+const countSpaces = function(str) {
+  let space = 0;
+  for (const spaces of str) {
+    if (spaces === ' ') {
+      space = space + 1 
+    }
+  }
+  return space
+}
 
+const countTrues = function(arr) {
+  let newArr = 0;
+  for (const trues of arr) {
+    if (trues === true) {
+      newArr += 1
+    }
+  }
+  return newArr
+}
 
+const makeFriendly = function(para) {
+  let newPara = '';
+  for (const friend of para) {
+    if (friend === '.') {
+      newPara = newPara + '!'
+    } else {
+      newPara = newPara + friend
+    }
+  }
+  return newPara
+}
 
+const cubeAll = function(nums) {
+  let newArray = [];
+  for (const num of nums){
+    newArray.push(num**3);
+    }
+  return newArray
+}
+
+const addNoises = function(animal) {
+  const noises = [];
+  const dogs = ['Fido', 'Rolph', 'Maisie']
+  const cats = ['Garfield', 'Heathcliff']
+  const lions = ['Barnie', 'Sharp Tooth']
+  for (const noise of animal) {
+    if (noise === dogs) {
+      noises.push(animal + ' says "Woof!"')
+    } else if (noise === cats) {
+      noises.push(animal + ' says "Meow!"')
+    } else if (noise === lions) {
+      noises.push(animal + ' says "ROWR!"')
+    }
+  }
+  return noises
+}
+
+const womenOnly = function(){
+
+}
+
+const integersOnly = function(){
+
+}
 
 
 /*********************************
